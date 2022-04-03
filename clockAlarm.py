@@ -19,21 +19,9 @@ class AlarmClock:
 
 # As a developer, I want the AlarmClock class to have a method to toggle the alarm on or off.
   def status_of_alarm(self) :
-    if self.is_on == False :
-      print(f'Your alarm is currently off. ')
-    elif self.is_on == True :
-      print (f'Your alarm is currently on. ')
+    self.is_on = True
 
 # As a developer, I want the AlarmClock class to have a method to set the current alarm time and print to the console the current alarm time.
-
-# As a developer, I want to import the AlarmClock class into main.py so I can instantiate it as a new AlarmClock object and call methods on it.
-
-# 1. Print the clock’s time to the terminal
-
-# 2. Call the alarm clock’s change current time method to change the current time
-
-# 3. Toggle the alarm clock’s on off switch
-
-
-
-
+  def set_alarm(self) :
+    self.set_time = input('Please enter the time that you want the alarm set to. ')
+    print(f'You have set the alarm for {self.set_time}')
